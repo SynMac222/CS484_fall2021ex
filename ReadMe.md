@@ -5,4 +5,4 @@ Yinan Shao
 https://github.com/SynMac222/CS484_fall2021ex
 ## Develop tool
 Visual studio Code
-# assignment-1---team-project-proposal-team19
+## assignment-1---team-project-proposal-team19
