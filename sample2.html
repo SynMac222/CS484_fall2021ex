@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Example Page on Threat Modeling</title>
+
+        <script>
+            /** JS Code **/
+        </script>
+        
+
+        <style>
+            /** Presentation Logic**/
+           
+            h1{
+                text-align: center;
+                color:rgb(104, 97, 97);
+                margin-top: 80px;
+            }
+            h2{
+                
+                color:rgb(104, 97, 97);
+                
+
+            }
+            p{
+                color:rgb(139, 133, 133);
+                font-size: 18px;
+            }
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                margin: auto;
+            }
+            header{
+                width: 100%;
+                height: 200px;
+                background-color: lightgray;
+                margin:1%
+            }
+            .middleboxes{
+                background-color:lightgray;
+                width: 400px;
+                height: 500px;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 400px;;
+                margin: 1%;
+
+            }
+            footer{
+                display: flex;
+                
+                background-color: lightgray;
+                width: 100%;
+                height: 220px;
+                clear: both;
+                margin:1%;
+                padding:10px;
+            }
+            .footer_box{
+                /* float: right; */
+                padding: 10px;
+        
+                flex: 1 0 200px;
+                background-color:rgb(163, 158, 158);
+                width: 150px;
+                margin: 1%;
+                height: 200px;
+            }
+            h3{
+                color:rgb(104, 97, 97);
+            }
+            
+                        /* smaller than 1024 pixels */
+            @media screen and (max-width: 1024px) {
+                header{
+                    background-color: #cd0000;
+                    /* display: none; */
+                }
+                
+            }
+            /* smaller than 768 pixels */
+            @media screen and (max-width: 768px) {
+                header{
+                    background-color: #eeff22;
+                }
+            }
+            /* smaller than 480 pixels */
+            @media screen and (max-width: 480px) {
+                header{
+                    background-color: #ffee00;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="container">
+            <header onClick="alert('hello')">
+                <h1>Global Geographic Information Display System</h1>
+            </header>
+            <section class="middleboxes">
+                <h2>Address the following in this section:</h2>
+                <p>
+                1.The RESTful API I use is GeoNames API <br>
+                2.The APIs use RESTful protocol and responses vary in format between XML, JSON, CSV, and TXT <br>
+                3.USER->fname,lname,dob,email,password<br>
+                  GeoInfo->ID,location,Country,city,weather,coordination<br>
+                </p>
+
+            </section>
+            <section class="middleboxes drop">
+                <h2>Address the following in this section:</h2>
+                <p>
+                1. Our users is people who concern about the global weather or people who often travel around the world.<br>
+                2. Goal: the site will show information include maps, weather information, batch geocoding, comprehensive routing and more.<br>
+
+                 and Additional advanced location features include geofencing (entry and exit notifications), custom and private roads, speed limits, traffic lights and road curvature.<br>
+                </p>
+
+                
+            </section>
+            <footer>
+                <div class="footer_box">
+                    <h3>Lists Resource Links: </h3>
+                    <a href="https://developer.here.com/develop/rest-apis">Link of RESTful API</a> 
+                </div>
+                <div class="footer_box">
+                    <h3>Lists Questions + Concerns: </h3>
+                    <p>Are we require to have to domain name?</p>
+                    <P> Do we need control the access of the domain?</P>
+                </div>
+                <div class="footer_box">
+                    <h3>Accessibility Implementation:</h3>
+                    <p>Add a element to allow user to switch between day mode and night mode of the we page. </p>
+                    <p>Add a element to allow user to adjust font-size</p>
+                </div>
+            </footer>
+        </div><!--Closing container-->
+        <script>
+
+        </script>
+    </body>
+</html>
